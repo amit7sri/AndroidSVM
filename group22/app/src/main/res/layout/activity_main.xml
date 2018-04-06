@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="group22.android.com.assign3.MainActivity">
+
+
+    <Button
+        android:id="@+id/walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onWalkingClick"
+        android:text="Walking"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onRunningClick"
+        android:text="Running"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/eating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:onClick="onEatingClick"
+        android:text="Eating"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:fontFamily="serif"
+            android:onClick="onTrainingClicked"
+            android:text="Train"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/accuracytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accuracy" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:fontFamily="serif"
+            android:onClick="onClassifyClick"
+            android:text="Classify"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/classifytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classify" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/existingdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:onClick="onExistingTrainingClicked"
+            android:text="Train Existing Data"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/existingtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accuracy"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/powergraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:gravity="center"
+        android:text="Power Comparision"
+        android:onClick="powergraph"/>
+
+    <Button
+        android:id="@+id/scatter3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scatter Graph"
+        android:onClick="scatter3DGraph"/>
+</LinearLayout>
